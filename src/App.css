@@ -68,3 +68,31 @@ button {
     width: 100px;
     
 }
+
+.todos-container-parent {
+   /* display: flex; */
+   width: 40%;
+
+
+}
+.todos-container-child {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    color: black;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px ;
+    border-radius: 5px;
+    background-color: rgba(191, 83, 83, 0.531);
+}
+
+.icon {
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.todo-text {
+    margin-left: 10px;
+}
