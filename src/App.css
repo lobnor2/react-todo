@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    border-bottom: 2px solid green;
+    /* border-bottom: 2px solid green; */
 }
 .footer {
     background-color: #2d2a92db;
@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    border-top: 2px solid green;
+    /* border-top: 2px solid green; */
 }
 
 .container {
