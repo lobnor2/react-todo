@@ -1,38 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
   background-color: #282c34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+  border: 1px solid red;
+}
+.container {
+  border: 1px solid white;
+  height: 80vh;
+  width: 450px;
+  padding: 20px;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.todoform {
+  border: 1px solid white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+}
+.todoform input {
+  padding: 6px 10px;
+  font-size: 17px;
+}
+.btn {
+  width: 70px;
+  border-radius: none;
+  height: 37px;
+  cursor: pointer;
+  margin-left: 5px;
+  background-color: rgb(119, 35, 155);
+  border: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+  margin-bottom: 0.7rem;
+  list-style: none;
+  border: 1px solid red;
+  width: 308px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3px;
+}
+.firstlistchild {
+  flex: 1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+
+  .App {
+    min-height: 100vh;
+    padding: 0;
+  }
+  .container {
+    padding: 40px;
+    width: 380px;
+  }
+  .todoform {
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+
+  .todoform input {
+    font-size: 15px;
+    width: 200px;
+    height: 37px;
+    border-radius: 0;
+    border: none;
+  }
+
+  .list {
+    width: 300px;
   }
 }
