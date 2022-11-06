@@ -57,6 +57,8 @@ function App() {
             {editId ? "Edit" : "Add"}
           </button>
         </form>
+
+        <div className="lineforbreak"></div>
         <ul>
           {todos.map((t) => (
             <li className="list">
@@ -77,6 +79,7 @@ function App() {
           ))}
         </ul>
       </div>
+      <p className="author">by lobnor</p>
     </div>
   );
 }

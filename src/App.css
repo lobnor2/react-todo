@@ -4,12 +4,19 @@
   box-sizing: border-box;
 }
 .App {
-  background-color: #282c34;
+  /* background-color: #282c34; */
+  background-color: #191e28;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+.author {
+  position: absolute;
+  bottom: 9px;
+  right: 9px;
+  color: white;
 }
 .container {
   border: 1px solid white;
@@ -46,17 +53,24 @@
 }
 
 .list {
-  margin-bottom: 0.7rem;
+  /* margin-bottom: 0rem; */
   list-style: none;
-  border: 1px solid red;
-  width: 308px;
+  /* border: 1px solid red; */
+  width: 350px;
   display: flex;
+  text-transform: capitalize;
   justify-content: flex-start;
   align-items: center;
   padding: 3px;
 }
 .firstlistchild {
   flex: 1;
+}
+.lineforbreak {
+  width: 100px;
+  height: 2px;
+  /* z-index: 3; */
+  color: white;
 }
 
 @media screen and (max-width: 600px) {
@@ -65,13 +79,19 @@
     padding: 0;
     box-sizing: border-box;
   }
-
   .App {
-    min-height: 100vh;
     padding: 0;
   }
+  .author {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
   .container {
+    min-height: 90vh;
     padding: 40px;
+    margin: 10px;
     width: 380px;
   }
   .todoform {
